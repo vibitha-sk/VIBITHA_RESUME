@@ -1,0 +1,342 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Centers vertically */
+    background-color: black;
+    height: 100vh;
+    position: relative;
+    /* For positioning the download button outside the white area */
+    overflow: hidden;
+    /* Prevents entire page from scrolling */
+}
+
+.side {
+    flex: 1;
+    background-color: black;
+    height: 100%;
+}
+
+main {
+    width: 650px;
+    /* Approximate width for A4 in pixels */
+    height: calc(100vh - 2cm);
+    /* Ensure 1 cm gap on top and bottom */
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    /* Optional shadow for effect */
+    box-sizing: border-box;
+    overflow-y: auto;
+    /* Allows scrolling if content exceeds height */
+}
+
+header {
+    /*position: relative;*/
+    text-align: center;
+    margin-top: 20px;
+}
+
+.name {
+    font-size: 2em;
+    /* Adjust size as needed */
+    font-weight: bold;
+    /* text-align: center;*/
+    margin-top: 0;
+}
+
+.download-btn {
+    position: fixed;
+    top: 1cm;
+    /* Position inside the 1 cm gap */
+    right: 1cm;
+    background-color: black;
+    color: white;
+    padding: 8px 12px;
+    font-size: 0.9em;
+    text-decoration: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    z-index: 10;
+    /* Ensures it appears above other elements */
+}
+
+.download-btn i {
+    font-size: 1.1em;
+    /* Slightly larger icon */
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Adds space between icons */
+    margin-top: 5px;
+    /* Adds space below the name */
+    font-size: 13px;
+    /* Controls the size of the contact text */
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    color: #000;
+    /* Set text and icon color to black */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item:hover {
+    color: #000;
+    /* Keep color black even on hover */
+}
+
+.contact-item i {
+    font-size: 15px;
+    /* Adjust the size of icons */
+}
+
+/*Education section */
+.section-header span {
+    font-size: 1em;
+    /* Match normal text size */
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 10px;
+
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    /* Adjust thickness */
+    background-color: #333;
+    /* Dark line color */
+    margin-bottom: 10px;
+}
+
+.graduation-details {
+    display: flex;
+    justify-content: space-between;
+    /* Align university name left and graduation date right */
+    width: 100%;
+    align-items: center;
+    color: #555;
+
+}
+
+.education-item {
+    margin-bottom: 20px;
+    /* Adds space below each education item */
+}
+
+/*Everything inside Education section after the line*/
+.education-item h3 {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 5px 0;
+    color: #1f1f1f;
+
+
+}
+
+.expected-graduation {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 0;
+    font-style: italic;
+
+}
+
+.education-item p {
+    font-size: 0.95em;
+    color: #555;
+    margin: 5px 0;
+
+
+}
+
+.education-item h3 a {
+    color: #333;
+    /* Removes underline and sets color */
+    text-decoration: none;
+
+}
+
+
+
+/*Skills section*/
+.section-header span {
+    font-size: 1em;
+    /* Match normal text size */
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    /* Adjust thickness */
+    background-color: #333;
+    /* Dark line color */
+    margin-bottom: 10px;
+}
+
+/* Skills List */
+.skills-list {
+    list-style-type: none;
+    /* Removes bullets */
+    padding-left: 0;
+    /* Removes left padding */
+    margin: 0;
+
+}
+
+.skills-list li {
+    margin-bottom: 3px;
+    /* Adds space between each item */
+    font-size: 1em;
+    font-weight: 500;
+    margin: 5px 0;
+    color: #1f1f1f;
+
+}
+
+.section-title {
+    font-weight: 500;
+    font-size: 1.1em;
+    padding-right: 4px;
+    /* Adds space after the colon */
+}
+
+.language-item {
+    font-size: 0.95em;
+    /*make languages in the normal color*/
+    color: #555;
+    margin: 5px 0;
+    margin-top: 5px;
+}
+
+.concept-item {
+    font-size: 0.95em;
+    /*make languages in the normal color*/
+    color: #555;
+    margin: 5px 0;
+
+
+}
+
+.framework-item {
+    font-size: 0.95em;
+    /*make languages in the normal color*/
+    color: #555;
+    margin: 5px 0;
+
+}
+
+.concept-item {
+    margin-bottom: 20px;
+}
+
+
+/* Experience section */
+.section-header span {
+    font-size: 1em;
+    /* Match normal text size */
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+
+.line {
+    flex-grow: 1;
+    height: 1px;
+    /* Adjust thickness */
+    background-color: #333;
+    /* Dark line color */
+    margin-bottom: 10px;
+}
+
+.role-details {
+    display: flex;
+    justify-content: space-between;
+    /* Align role name left and duration right */
+    width: 100%;
+    align-items: center;
+    color: #555;
+}
+
+.experience-item {
+    margin-bottom: 20px;
+    /* Adds space below each experience item */
+}
+
+/* Everything inside Experience section after the line */
+.experience-item h3 {
+    font-size: 1em;
+    font-weight: 500;
+    margin: 5px 0;
+    color: #1f1f1f;
+    display: inline;
+}
+
+.role-duration {
+    font-size: 0.9em;
+    color: #555;
+    margin: 5px 0;
+    font-style: italic;
+}
+
+.experience-item p {
+    font-size: 0.95em;
+    color: #555;
+    margin: 5px 0;
+}
+
+.experience-item h3 a {
+    color: #333;
+    /* Removes underline and sets color */
+    text-decoration: none;
+}
+
+@media print {
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+
+    .side {
+        display: none;
+        /* Hide decorative sidebars */
+    }
+
+    .download-btn {
+        display: none;
+        /* Hide download button in the PDF */
+    }
+
+    header,
+    section {
+        margin: 20px 0;
+    }
+
+    a {
+        color: black;
+        /* Remove link styling for print */
+        text-decoration: none;
+    }
+}
